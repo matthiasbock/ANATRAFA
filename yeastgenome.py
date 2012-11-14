@@ -5,7 +5,7 @@
 # Saccharomyces Genome Database (SGD)
 # http://yeastgenome.org/
 #
-# uses YeastMine
+# uses YeastMine API
 # http://yeastmine.yeastgenome.org/yeastmine/begin.do
 #
 

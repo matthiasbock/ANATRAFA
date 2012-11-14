@@ -1,13 +1,11 @@
 #!/usr/bin/python
 
 #
-# Python library to access the
 # Saccharomyces Genome Database (SGD)
-# http://yeastgenome.org/
-#
-
-# Official API:
 # http://yeastmine.yeastgenome.org/yeastmine/api.do?subtab=python
+#
+# YeastMine example script
+#
 
 from intermine.webservice import Service
 
