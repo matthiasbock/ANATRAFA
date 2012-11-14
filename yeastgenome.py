@@ -9,3 +9,5 @@
 # http://yeastmine.yeastgenome.org/yeastmine/begin.do
 #
 
+def ORF_exists(ORF):
+	return True

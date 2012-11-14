@@ -9,7 +9,7 @@
 # Official API:
 # http://yeastmine.yeastgenome.org/yeastmine/api.do?subtab=python
 
-from intermine import *
+from intermine.webservice import Service
 
 service = Service("http://yeastmine.yeastgenome.org/yeastmine/service")
 

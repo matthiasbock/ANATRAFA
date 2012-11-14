@@ -7,11 +7,13 @@ def analyze(TF):
 
 	# query YeastGenome to determine, if there is such a TF
 
-	print "First, asking SGD, whether "+TF+" is a yeast protein."
+	print "First, asking SGD, whether "+TF+" is a valid yeast protein ...",
 	if not yeastgenome.ORF_exists(TF):
-		print "No! Seems there is no such ORF in yeast."
+		print "no!\nSeems there is no such ORF in yeast."
 		print "Please redefine your search. You may want to consult http://yeastgenome.org/ to verify your ORF."
 		return
+	else:
+		print "yes."
 
 	# query Yeastract to retrieve TF's target genes
 
