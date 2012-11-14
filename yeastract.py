@@ -5,6 +5,9 @@
 # Saccharomyces Transcription Factor Database (Yeastract)
 # http://yeastract.org/
 #
+# Yeastract API:
+# http://yeastract.com/services/
+#
 
 def query_ORF(ORF):
 	from httpclient import HttpClient

@@ -1,14 +1,26 @@
 #!/usr/bin/python
 
-from sys import argv
-tf = argv[1]
+def analyze(TF):
+	import yeastgenome
 
-# query YeastGenome to determine, if there is such a TF
+	print "So, let's try to find out, what the transcription factor "+TF+" is for ..."
 
-# query Yeastract to retrieve TF's target genes
+	# query YeastGenome to determine, if there is such a TF
 
-# query YeastGenome to retrieve GO terms and protein descriptions
+	print "First, asking SGD, whether "+TF+" is a yeast protein."
+	if not yeastgenome.ORF_exists(TF):
+		print "No! Seems there is no such ORF in yeast."
+		print "Please redefine your search. You may want to consult http://yeastgenome.org/ to verify your ORF."
+		return
 
-# calculate frequency of GO terms
+	# query Yeastract to retrieve TF's target genes
 
-# print results
+	# query YeastGenome to retrieve GO terms and protein descriptions
+
+	# calculate frequency of GO terms
+
+	# print results
+
+if __name__ == "__main__":
+	from sys import argv
+	analyze(argv[1])
